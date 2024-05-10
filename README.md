@@ -85,6 +85,43 @@ The baseline system consists of three stages of training:
 | SDD_DF0015 | dev/eval/DF0015 | 68.44           | 0.035  | 0.075 | 0.11   |
 | SDD_DM0019 | dev/eval/DM0019 | 47.95           | 0.0688 | 0.175 | 0.2438 |
 
+### Results of test set
+
+In the testing code provided with the baseline, an audio sample can be predicted as multiple wake words.  However, in the evaluation for the challenge system, only a single prediction is allowed for each audio sample, which may result in a decrease in FAR (False Acceptance Rate) and an increase in FRR (False Rejection Rate).  We provide the results obtained using the baseline testing script, as well as the results obtained using the challenge testing script. 
+
+Evaluated by the testing script of the baseline:
+
+| **Model**  | **Test set**     | **Intelligibility** | **Threshold** | **FAR** | **FRR** | **Score** |
+| ---------- | ---------------- | ------------------- | ------------- | ------- | ------- | --------- |
+| SDD_DF0023 | test/eval/DF0023 | 49.91               | 0.002         | 0.1668  | 0.3250  | 0.4918    |
+| SDD_DF0026 | test/eval/DF0026 | 77.53               | 0.033         | 0.0144  | 0.0000  | 0.0144    |
+| SDD_DF0028 | test/eval/DF0028 | 91.10               | 0.001         | 0.0741  | 0.0750  | 0.1491    |
+| SDD_DF0030 | test/eval/DF0030 | 90.50               | 0.284         | 0.0036  | 0.0000  | 0.0036    |
+| SDD_DM0022 | test/eval/DM0022 | 57.58               | 0.005         | 0.0929  | 0.2250  | 0.3179    |
+| SDD_DM0024 | test/eval/DM0024 | 38.90               | 0.001         | 0.1127  | 0.3500  | 0.4627    |
+| SDD_DM0025 | test/eval/DM0025 | 78.13               | 0.023         | 0.0311  | 0.1000  | 0.1311    |
+| SDD_DM0027 | test/eval/DM0027 | 67.40               | 0.002         | 0.1095  | 0.1500  | 0.2595    |
+| SDD_DM0029 | test/eval/DM0029 | 45.80               | 0.001         | 0.1338  | 0.1750  | 0.3088    |
+| SDD_DM0031 | test/eval/DM0031 | 89.73               | 0.017         | 0.0259  | 0.0500  | 0.0759    |
+
+Evaluated by the testing script of the challenge system:
+
+| **Model**   | **Test set**     | **Intelligibility** | **Threshold** | **FAR** | **FRR** | **Score**  |
+| ----------- | ---------------- | ------------------- | ------------- | ------- | ------- | ---------- |
+| SDD_DF0023  | test/eval/DF0023 | 49.91               | 0.002         | 0.0736  | 0.5000  | 0.5736     |
+| SDD_DF0026  | test/eval/DF0026 | 77.53               | 0.033         | 0.0116  | 0.0250  | 0.0366     |
+| SDD_DF0028  | test/eval/DF0028 | 91.10               | 0.001         | 0.0351  | 0.4000  | 0.4351     |
+| SDD_DF0030  | test/eval/DF0030 | 90.50               | 0.284         | 0.0033  | 0.0000  | 0.0033     |
+| SDD_DM0022  | test/eval/DM0022 | 57.58               | 0.005         | 0.0497  | 0.3750  | 0.4247     |
+| SDD_DM0024  | test/eval/DM0024 | 38.90               | 0.001         | 0.0562  | 0.5500  | 0.6062     |
+| SDD_DM0025  | test/eval/DM0025 | 78.13               | 0.023         | 0.0234  | 0.1750  | 0.1984     |
+| SDD_DM0027  | test/eval/DM0027 | 67.40               | 0.002         | 0.0574  | 0.1750  | 0.2324     |
+| SDD_DM0029  | test/eval/DM0029 | 45.80               | 0.001         | 0.0597  | 0.4500  | 0.5097     |
+| SDD_DM0031  | test/eval/DM0031 | 89.73               | 0.017         | 0.0164  | 0.0750  | 0.0914     |
+| **average** |                  |                     |               | 0.0386  | 0.2725  | **0.3111** |
+
+The average Score will be used as the ranking basis.
+
 ## Notice
 
 - The baseline code we provided will output FAR and FRR under different thresholds during the test phase (stage 3). However, in the test phase of the challenge, participants are only allowed to submit a final wake-up result for each speech clip. Also, during the test phase, we will not provide annotations for eval in the test set. This means that participants need to think about how to choose the appropriate threshold.

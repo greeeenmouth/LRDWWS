@@ -70,7 +70,7 @@ fi
 # testing
 if [ ${stage} -le 3 ] && [ ${stop_stage} -ge 3 ]; then
   echo "Compute FRR/FAR ..."
-  average_model=false
+  average_model=true
   num_average=30
   if $average_model ;then
     score_checkpoint=$dir/avg_${num_average}.pt

@@ -74,7 +74,7 @@ if [ ${stage} -le 2 ] && [ ${stop_stage} -ge 2 ]; then
       ${checkpoint:+--checkpoint $checkpoint}
 fi
 
-average_model=false
+average_model=true
 num_average=30
 if $average_model ;then
   score_checkpoint=$dir/avg_${num_average}.pt
