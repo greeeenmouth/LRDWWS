@@ -87,7 +87,7 @@ The baseline system consists of three stages of training:
 
 ### Results of test set
 
-In the testing code provided with the baseline, an audio sample can be predicted as multiple wake words.  However, in the evaluation for the challenge system, only a single prediction is allowed for each audio sample, which may result in a decrease in FAR (False Acceptance Rate) and an increase in FRR (False Rejection Rate).  We provide the results obtained using the baseline testing script, as well as the results obtained using the challenge testing script. 
+In the testing code provided with the baseline, an audio sample can be predicted as multiple wake words.  However, in the evaluation for the challenge system, only a single prediction is allowed for each audio sample, which may result in a decrease in FAR (False Alarm Rate) and an increase in FRR (False Reject Rate).  We provide the results obtained using the baseline testing script, as well as the results obtained using the challenge testing script. 
 
 Evaluated by the testing script of the baseline:
 
@@ -118,7 +118,7 @@ Evaluated by the testing script of the challenge system:
 | SDD_DM0027  | test/eval/DM0027 | 67.40               | 0.002         | 0.0574  | 0.1750  | 0.2324     |
 | SDD_DM0029  | test/eval/DM0029 | 45.80               | 0.001         | 0.0597  | 0.4500  | 0.5097     |
 | SDD_DM0031  | test/eval/DM0031 | 89.73               | 0.017         | 0.0164  | 0.0750  | 0.0914     |
-| **average** |                  |                     |               | 0.0386  | 0.2725  | **0.3111** |
+| **average** |                  |                     |               | 0.0387  | 0.2725  | **0.3111** |
 
 The average Score will be used as the ranking basis.
 
