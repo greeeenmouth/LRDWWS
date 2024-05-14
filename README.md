@@ -118,7 +118,7 @@ Evaluated by the testing script of the challenge system:
 | SDD_DM0027  | test/eval/DM0027 | 67.40               | 0.002         | 0.0574  | 0.1750  | 0.2324     |
 | SDD_DM0029  | test/eval/DM0029 | 45.80               | 0.001         | 0.0597  | 0.4500  | 0.5097     |
 | SDD_DM0031  | test/eval/DM0031 | 89.73               | 0.017         | 0.0164  | 0.0750  | 0.0914     |
-| **average** |                  |                     |               | 0.0387  | 0.2725  | **0.3111** |
+| **average** |                  |                     |               | 0.0387  | 0.2725  | **0.3112** |
 
 The average Score will be used as the ranking basis.
 
