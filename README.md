@@ -1,4 +1,4 @@
-# SLT2024 LRDWWS Challenge Baseline
+<img width="592" alt="image" src="https://github.com/greeeenmouth/LRDWWS/assets/31959671/6eed548f-b029-4b26-99e3-59510013f414"><img width="592" alt="image" src="https://github.com/greeeenmouth/LRDWWS/assets/31959671/a9739f49-ed8a-4a13-87cf-93056dadd154"># SLT2024 LRDWWS Challenge Baseline
 
 ## Introduction
 
@@ -85,7 +85,7 @@ The baseline system consists of three stages of training:
 | SDD_DF0015 | dev/eval/DF0015 | 68.44           | 0.035  | 0.075 | 0.11   |
 | SDD_DM0019 | dev/eval/DM0019 | 47.95           | 0.0688 | 0.175 | 0.2438 |
 
-### Results of test set
+### Results of test-a set
 
 In the testing code provided with the baseline, an audio sample can be predicted as multiple wake words.  However, in the evaluation for the challenge system, only a single prediction is allowed for each audio sample, which may result in a decrease in FAR (False Alarm Rate) and an increase in FRR (False Reject Rate).  We provide the results obtained using the baseline testing script, as well as the results obtained using the challenge testing script. 
 
@@ -121,6 +121,39 @@ Evaluated by the testing script of the challenge system:
 | **average** |                  |                     |               | 0.0387  | 0.2725  | **0.3112** |
 
 The average Score will be used as the ranking basis.
+
+### Results of test-b set
+
+Evaluated by the testing script of the baseline:
+
+| **Model**      | **Test set**       | **Threshold** | **FAR**  | **FRR**  | **Score** |
+| -------------- | ------------------ | ------------- | -------- | -------- | --------- |
+| **SDD_DF0037** | test-b/eval/DF0037 | 0.01          | 0.034293 | 0.000000 | 0.034293  |
+| **SDD_DM0032** | test-b/eval/DM0032 | 0.021         | 0.025128 | 0.000000 | 0.025128  |
+| **SDD_DM0033** | test-b/eval/DM0033 | 0.007         | 0.118462 | 0.050000 | 0.168462  |
+| **SDD_DM0034** | test-b/eval/DM0034 | 0.242         | 0.003807 | 0.020000 | 0.023807  |
+| **SDD_DM0035** | test-b/eval/DM0035 | 0.001         | 0.075915 | 0.090000 | 0.165915  |
+| **SDD_DM0036** | test-b/eval/DM0036 | 0.011         | 0.034099 | 0.045000 | 0.079099  |
+| **SDD_DM0038** | test-b/eval/DM0038 | 0.009         | 0.011282 | 0.025000 | 0.036282  |
+| **SDD_DM0039** | test-b/eval/DM0039 | 0.711         | 0.002564 | 0.000000 | 0.002564  |
+| **SDD_DM0040** | test-b/eval/DM0040 | 0.003         | 0.045128 | 0.150000 | 0.195128  |
+| **SDD_DM0041** | test-b/eval/DM0041 | 0.005         | 0.051795 | 0.050000 | 0.101795  |
+
+Evaluated by the testing script of the challenge system:
+
+| **Model**      | **Test set**       | **Threshold** | **FAR**  | **FRR**  | **Score** |
+| -------------- | ------------------ | ------------- | -------- | -------- | --------- |
+| **SDD_DF0037** | test-b/eval/DF0037 | 0.01          | 0.025654 | 0.025000 | 0.050654  |
+| **SDD_DM0032** | test-b/eval/DM0032 | 0.021         | 0.016154 | 0.050000 | 0.066154  |
+| **SDD_DM0033** | test-b/eval/DM0033 | 0.007         | 0.068718 | 0.175000 | 0.243718  |
+| **SDD_DM0034** | test-b/eval/DM0034 | 0.242         | 0.003807 | 0.020000 | 0.023807  |
+| **SDD_DM0035** | test-b/eval/DM0035 | 0.001         | 0.048987 | 0.251667 | 0.300654  |
+| **SDD_DM0036** | test-b/eval/DM0036 | 0.011         | 0.021279 | 0.070000 | 0.091279  |
+| **SDD_DM0038** | test-b/eval/DM0038 | 0.009         | 0.033846 | 0.025000 | 0.058846  |
+| **SDD_DM0039** | test-b/eval/DM0039 | 0.711         | 0.002564 | 0.000000 | 0.002564  |
+| **SDD_DM0040** | test-b/eval/DM0040 | 0.003         | 0.030000 | 0.275000 | 0.305000  |
+| **SDD_DM0041** | test-b/eval/DM0041 | 0.005         | 0.035385 | 0.125000 | 0.160385  |
+| **average**    |                    |               | 0.028639 | 0.101667 | **0.130306**  |
 
 ## Notice
 
