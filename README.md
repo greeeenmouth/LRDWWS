@@ -1,4 +1,4 @@
-<img width="592" alt="image" src="https://github.com/greeeenmouth/LRDWWS/assets/31959671/6eed548f-b029-4b26-99e3-59510013f414"><img width="592" alt="image" src="https://github.com/greeeenmouth/LRDWWS/assets/31959671/a9739f49-ed8a-4a13-87cf-93056dadd154"># SLT2024 LRDWWS Challenge Baseline
+# SLT2024 LRDWWS Challenge Baseline
 
 ## Introduction
 
